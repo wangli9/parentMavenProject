@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: childConfigService
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/wangli9/springCloudConfigService/
+          searchPaths: respo
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8080/eureka/
